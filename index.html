@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>VoProCol - Un Salto Hacia La Grandeza</title>
+    <link rel="icon" type="image/png" href="icono.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#DC143C',
+                        secondary: '#003DA5',
+                        accent: '#FFD700'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-gradient-to-r from-secondary to-primary shadow-2xl">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer text-white text-2xl font-bold hover:scale-105 transition-transform">
+                <i class="fas fa-volleyball text-2xl"></i>
+                <span>VoProCol</span>
+            </div>
+            <ul class="hidden md:flex list-none gap-8 text-white font-medium">
+                <li><a href="#inicio" class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Inicio</a></li>
+                <li><a href="#idea" class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Idea</a></li>
+                <li><a href="#servicios" class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Servicios</a></li>
+                <li><a href="#fundadores" class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Fundadores</a></li>
+                <li><a href="#contacto" class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Contacto</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col cursor-pointer gap-1.5" id="hamburger">
+                <span class="w-6 h-0.5 bg-white transition-all"></span>
+                <span class="w-6 h-0.5 bg-white transition-all"></span>
+                <span class="w-6 h-0.5 bg-white transition-all"></span>
+            </div>
+        </div>
+        <ul class="hidden md:hidden nav-links list-none bg-gradient-to-r from-secondary to-primary flex-col py-2" id="navLinks">
+            <li><a href="#inicio" class="text-white px-4 py-2 block hover:bg-black/20">Inicio</a></li>
+            <li><a href="#idea" class="text-white px-4 py-2 block hover:bg-black/20">Idea</a></li>
+            <li><a href="#servicios" class="text-white px-4 py-2 block hover:bg-black/20">Servicios</a></li>
+            <li><a href="#fundadores" class="text-white px-4 py-2 block hover:bg-black/20">Fundadores</a></li>
+            <li><a href="#contacto" class="text-white px-4 py-2 block hover:bg-black/20">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 px-4 max-w-6xl mx-auto bg-gradient-to-br from-blue-50 to-red-50">
+        <div class="animate-fade-in-left">
+            <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-2">VoProCol</h1>
+            <p class="text-2xl font-bold text-primary mb-4 tracking-widest">UN SALTO HACIA LA GRANDEZA</p>
+            <p class="text-lg text-gray-700 mb-6">Formación profesional deportiva en voleibol para jóvenes apasionados</p>
+            <button onclick="document.getElementById('idea').scrollIntoView({behavior:'smooth'})" class="px-8 py-3 bg-gradient-to-r from-secondary to-primary text-white font-bold uppercase tracking-wider rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all">Conoce Más</button>
+        </div>
+        <div class="animate-fade-in-right">
+            <img src="Images/image_12.jpg" alt="VoProCol Hero" class="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform">
+        </div>
+    </section>
+
+    <!-- Idea de Negocio -->
+    <section id="idea" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-4">Nuestra Idea de Negocio</h2>
+            <p class="text-center text-gray-600 text-lg mb-12">Brindar formación profesional deportiva en voleibol para la comunidad juvenil mediante programas de entrenamiento</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+                    <i class="fas fa-chart-line text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Bajo Nivel Técnico</h3>
+                    <p class="text-gray-600">Mejoramos las habilidades técnicas en la práctica de voleibol</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+                    <i class="fas fa-gamepad text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Poca Experiencia</h3>
+                    <p class="text-gray-600">Oportunidades reales de juego en el campo profesional</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+                    <i class="fas fa-dumbbell text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Mejoramiento Físico</h3>
+                    <p class="text-gray-600">Entrenamientos intensivos para desarrollo físico y técnico</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all">
+                    <i class="fas fa-users text-4xl text-primary mb-4"></i>
+                    <h3 class="text-xl font-bold text-secondary mb-2">Comunicación en Equipo</h3>
+                    <p class="text-gray-600">Fortalecemos la coordinación con tu propio equipo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 px-4 bg-gradient-to-br from-blue-50 to-red-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-12">Nuestros Servicios</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform"><i class="fas fa-people-group"></i></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Clases Grupales</h3>
+                        <p class="text-gray-600 mb-4">Entrenamientos intensivos de voleibol junto a un equipo profesional, mejorando habilidades técnicas y tácticas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform"><i class="fas fa-bullseye"></i></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Programa de Refuerzo</h3>
+                        <p class="text-gray-600 mb-4">Asistencia especial para técnicas que resultan difíciles, con seguimiento personalizado.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform"><i class="fas fa-star"></i></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Plan Grandeza</h3>
+                        <p class="text-gray-600 mb-4">Entrenamiento personalizado adaptado a tu condición física y mental para alcanzar tu máximo potencial.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform"><i class="fas fa-plane"></i></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Viajes VoPro</h3>
+                        <p class="text-gray-600 mb-4">Salidas trimestrales para competir con otros equipos de escuelas y clubes a nivel regional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-12">Nuestros Objetivos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-secondary to-primary text-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="text-5xl font-bold opacity-30 mb-4">01</div>
+                    <h3 class="text-2xl font-bold mb-3">Fortalecer Habilidades</h3>
+                    <p class="opacity-90">Mejorar habilidades técnicas y tácticas del voleibol a través de entrenamientos especializados.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-secondary to-primary text-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="text-5xl font-bold opacity-30 mb-4">02</div>
+                    <h3 class="text-2xl font-bold mb-3">Entrenamientos Grupales</h3>
+                    <p class="opacity-90">Impulsar la comunicación y el trabajo en equipo mediante entrenamientos colaborativos.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-secondary to-primary text-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <div class="text-5xl font-bold opacity-30 mb-4">03</div>
+                    <h3 class="text-2xl font-bold mb-3">Ambiente Positivo</h3>
+                    <p class="opacity-90">Propiciar un entorno sano y amigable entre compañeros para el crecimiento integral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores -->
+    <section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-red-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-12">Nuestros Valores</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Tolerancia</h3>
+                    <p class="text-gray-600">Aceptación de las diferencias</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Respeto</h3>
+                    <p class="text-gray-600">Base de la convivencia</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Trabajo en Equipo</h3>
+                    <p class="text-gray-600">Unidad para alcanzar metas</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Disciplina</h3>
+                    <p class="text-gray-600">Valor que demuestra persistencia</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Paciencia</h3>
+                    <p class="text-gray-600">Virtud que impulsa hacia la excelencia</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Responsabilidad</h3>
+                    <p class="text-gray-600">Compromiso que fortalece la conciencia</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-primary hover:border-secondary hover:-translate-y-1 transition-all">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Entusiasmo</h3>
+                    <p class="text-gray-600">Motivación que permite aprovechar la experiencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-secondary to-blue-700 text-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <h2 class="text-3xl font-bold mb-4">Misión</h2>
+                    <p class="leading-relaxed">Crear y formar jóvenes deportistas apasionados por el voleibol, capaces de coordinar con su equipo y aplicar las habilidades trabajadas en su formación en el campo de juego.</p>
+                </div>
+                <div class="bg-gradient-to-br from-primary to-red-700 text-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <h2 class="text-3xl font-bold mb-4">Visión</h2>
+                    <p class="leading-relaxed">Ser en 5 años un centro líder en formación de jóvenes deportistas profesionales del voleibol en Colombia, reconocido por su excelencia, su enseñanza y su impacto positivo en la comunidad juvenil del país.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fundadores -->
+    <section id="fundadores" class="py-20 px-4 bg-gradient-to-br from-blue-50 to-red-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-12">Nuestro Equipo Fundador</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <img src="Images/1.png" alt="Raumit Alejandro Díaz Ávila" class="w-full h-64 object-cover hover:scale-110 transition-transform">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-secondary mb-1">Raumit Alejandro Díaz Ávila</h3>
+                        <p class="text-sm font-bold text-primary uppercase mb-2">Entrenador Principal</p>
+                        <p class="text-sm text-gray-600">Especialista en entrenamientos de voleibol con experiencia profesional.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <img src="Images/2.png" alt="Diego Sebastián Armas Puerta" class="w-full h-64 object-cover hover:scale-110 transition-transform">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-secondary mb-1">Diego Sebastián Armas Puerta</h3>
+                        <p class="text-sm font-bold text-primary uppercase mb-2">Director de Marketing</p>
+                        <p class="text-sm text-gray-600">Estratega en comunicación y posicionamiento de marca.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <img src="Images/4.png" alt="Jean Franco Martínez Jiménez" class="w-full h-64 object-cover hover:scale-110 transition-transform">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-secondary mb-1">Jean Franco Martínez Jiménez</h3>
+                        <p class="text-sm font-bold text-primary uppercase mb-2">Gestor de Competencias</p>
+                        <p class="text-sm text-gray-600">Experto en desarrollo de habilidades y competencias deportivas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
+                    <img src="Images/3.png" alt="Yilmar Yair Moreno Rivas" class="w-full h-64 object-cover hover:scale-110 transition-transform">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-secondary mb-1">Yilmar Yair Moreno Rivas</h3>
+                        <p class="text-sm font-bold text-primary uppercase mb-2">Coordinador Deportivo</p>
+                        <p class="text-sm text-gray-600">Responsable de la coordinación y gestión de actividades deportivas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 px-4 bg-gradient-to-br from-blue-50 to-red-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent mb-4">¡Ponte en Contacto!</h2>
+            <p class="text-center text-gray-600 text-lg mb-12">Estamos dispuestos a responder cualquier pregunta</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Tu Nombre" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Tu Email" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors">
+                    </div>
+                    <div>
+                        <textarea placeholder="Tu Mensaje" rows="5" required class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-secondary to-primary text-white font-bold uppercase tracking-wider rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all">Enviar Mensaje</button>
+                </form>
+
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <i class="fas fa-phone text-2xl text-primary mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-secondary">Teléfono</h4>
+                            <p class="text-gray-600">+57 (1) 000-0000</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-envelope text-2xl text-primary mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-secondary">Email</h4>
+                            <p class="text-gray-600">contacto@voprocol.com</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-primary mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-secondary">Ubicación</h4>
+                            <p class="text-gray-600">Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-secondary to-primary text-white text-center py-8 px-4">
+        <p class="mb-2">&copy; 2025 VoProCol. Todos los derechos reservados.</p>
+        <p>Desarrollado por Fravelz</p>
+    </footer>
+
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            const originalText = button.textContent;
+            
+            button.textContent = '¡Mensaje Enviado!';
+            button.classList.add('bg-green-600');
+            button.classList.remove('bg-gradient-to-r', 'from-secondary', 'to-primary');
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.classList.remove('bg-green-600');
+                button.classList.add('bg-gradient-to-r', 'from-secondary', 'to-primary');
+                this.reset();
+            }, 3000);
+        });
+
+        // Smooth scroll active nav link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    document.querySelectorAll('nav a').forEach(link => {
+                        link.classList.remove('text-accent');
+                        const href = link.getAttribute('href');
+                        if (href === '#' + section.id) {
+                            link.classList.add('text-accent');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
