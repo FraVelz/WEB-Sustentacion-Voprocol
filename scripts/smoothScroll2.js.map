@@ -1,0 +1,1 @@
+{"version":3,"file":"smoothScroll2.js","sourceRoot":"","sources":["../typescript/smoothScroll2.ts"],"names":[],"mappings":"AAAA,gBAAgB;AAChB,MAAM,CAAC,OAAO,UAAU,aAAa;IACnC,QAAQ,CAAC,cAAc,CAAC,YAAY,CAAC,EAAE,gBAAgB,CAAC,OAAO,EAAE,GAAG,EAAE;QACpE,QAAQ,CAAC,cAAc,CAAC,MAAM,CAAC,EAAE,cAAc,CAAC;YAC9C,QAAQ,EAAE,QAAQ;SACnB,CAAC,CAAC;IACL,CAAC,CAAC,CAAC;AACL,CAAC"}

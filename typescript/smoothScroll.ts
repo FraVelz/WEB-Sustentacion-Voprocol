@@ -1,20 +1,24 @@
-// Smooth scroll active nav link
+// Smooth scrolling on links and buttons
 export default function smoothScroll() {
-  const sections = document.querySelectorAll('section[id]') as NodeListOf<HTMLElement>;
-  const nav = document.querySelectorAll('nav a')
+  // btn
+  document.getElementById('learn-more')?.addEventListener('click', () => {
+    document.getElementById('idea')?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 
-  window.addEventListener('scroll', () => {
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      const sectionHeight = section.offsetHeight;
+  const navLinks = document.querySelectorAll<HTMLAnchorElement>('nav ul li a[href^="#"]');
 
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        nav.forEach(link => {
-          link.classList.remove('text-accent');
-          const href = link.getAttribute('href');
-          if (href === '#' + section.id) {
-            link.classList.add('text-accent');
-          }
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault(); // We prevent the instant jump
+
+      const targetId = link.getAttribute('href')?.substring(1); // We remove the #
+      const targetEl = targetId ? document.getElementById(targetId) : null;
+
+      if (targetEl) {
+        targetEl.scrollIntoView({
+          behavior: 'smooth'
         });
       }
     });

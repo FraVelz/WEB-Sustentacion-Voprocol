@@ -1,7 +1,9 @@
-import hamburgerMenu from "./hamburgerMenu"
-import smoothSCroll from "./smoothScroll"
-import formSubmission from "./formSubmission"
+import hamburgerMenu from "./hamburgerMenu.js"
+import detectDisplacement from "./detectDisplacement.js"
+import smoothScroll from "./smoothScroll.js"
+import formSubmission from "./formSubmission.js"
 
 hamburgerMenu()
-smoothSCroll()
-formSubmission() 
+detectDisplacement()
+smoothScroll()
+formSubmission()
