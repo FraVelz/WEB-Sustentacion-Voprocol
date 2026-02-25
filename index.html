@@ -10,20 +10,7 @@
 
     <link rel="icon" type="image/png" href="./images/extras/icon.png">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#DC143C',
-                        secondary: '#003DA5',
-                        accent: '#FFD700'
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="./styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -38,19 +25,19 @@
             </div>
             <ul class="hidden md:flex list-none gap-8 text-white font-medium">
                 <li><a href="#inicio"
-                        class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Inicio</a>
+                        class="nav-a hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Inicio</a>
                 </li>
                 <li><a href="#idea"
-                        class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Idea</a>
+                        class="nav-a hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Idea</a>
                 </li>
                 <li><a href="#servicios"
-                        class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Servicios</a>
+                        class="nav-a hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Servicios</a>
                 </li>
                 <li><a href="#fundadores"
-                        class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Fundadores</a>
+                        class="nav-a hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Fundadores</a>
                 </li>
                 <li><a href="#contacto"
-                        class="hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Contacto</a>
+                        class="nav-a hover:text-accent transition-colors relative pb-1 hover:border-b-2 hover:border-accent">Contacto</a>
                 </li>
             </ul>
             <div class="hamburger md:hidden flex flex-col cursor-pointer gap-1.5" id="hamburger">
@@ -135,7 +122,8 @@
                     class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
                     <div
                         class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform">
-                        <i class="fas fa-people-group"></i></div>
+                        <i class="fas fa-people-group"></i>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-secondary mb-2">Clases Grupales</h3>
                         <p class="text-gray-600 mb-4">Entrenamientos intensivos de voleibol junto a un equipo
@@ -147,7 +135,8 @@
                     class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
                     <div
                         class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform">
-                        <i class="fas fa-bullseye"></i></div>
+                        <i class="fas fa-bullseye"></i>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-secondary mb-2">Programa de Refuerzo</h3>
                         <p class="text-gray-600 mb-4">Asistencia especial para técnicas que resultan difíciles, con
@@ -159,7 +148,8 @@
                     class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
                     <div
                         class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform">
-                        <i class="fas fa-star"></i></div>
+                        <i class="fas fa-star"></i>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-secondary mb-2">Plan Grandeza</h3>
                         <p class="text-gray-600 mb-4">Entrenamiento personalizado adaptado a tu condición física y
@@ -171,7 +161,8 @@
                     class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 transition-all">
                     <div
                         class="bg-gradient-to-r from-secondary to-primary h-24 flex items-center justify-center text-white text-4xl hover:scale-110 transition-transform">
-                        <i class="fas fa-plane"></i></div>
+                        <i class="fas fa-plane"></i>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-secondary mb-2">Viajes VoPro</h3>
                         <p class="text-gray-600 mb-4">Salidas trimestrales para competir con otros equipos de escuelas y
